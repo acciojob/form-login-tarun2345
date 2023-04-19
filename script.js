@@ -1,6 +1,10 @@
 function getFormvalue() {
     //Write your code here
+	let submit = document.getElementById("submit");
+	submit.addEventListener("click",sub)
 	let fname = document.getElementById("f");
 	let lname = document.getElementById("l");
-	alert(fname.value +" "+ lname.value);
+	function sub() {
+		alert(fname.value+" "+lname.value);
+	}
 }
